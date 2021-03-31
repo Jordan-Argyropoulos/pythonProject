@@ -25,6 +25,9 @@ Gestion Article, Réception Encodage, Reception Validation
 #
 import csv
 
+import article as article
+
+article
 
 from menu import Menu
 

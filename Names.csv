@@ -1,5 +1,5 @@
-;Intitule;Prix;Inventaire
-Article 1;Pate;4.0;2
-Article 2;Tomate;3.0;2
-Article 3;Fromage;2.5;1
-Article 4;Vin;15.0;1
+;Inventaire;Intitule;Prix
+Article 2;Vin;15.0;1
+Article 1;Fromage;2.5;1
+Article 4;Pate;4.0;2
+Article 3;Tomate;3.0;2
