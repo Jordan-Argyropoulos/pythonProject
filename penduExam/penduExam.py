@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 24 07:36:15 2020
-@author: @Xalava
-"""
-
 import random
 
 choix = ["casserole", "cuillere", "patate", "souris"]
