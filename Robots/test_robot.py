@@ -1,8 +1,8 @@
 from robots import Robot
 
-r1 = Robot(4, 10, 'est')
+r1 = Robot(4, 10, 'est', 'Robert', 'Humanoide', 'En service')
 print('r1 =', r1)
-r2 = Robot(15, 7, 'sud')
+r2 = Robot(15, 7, 'sud', 'Juliette', 'Mobile', 'En service')
 print('r2 =', r2)
 
 r1.nom = "D2R2"  # on a ajouté un nom à r1 mais r2 n'a pas de nom

@@ -6,6 +6,7 @@ solution = random.choice(choix)
 tentatives = 7
 affichage = ""
 lettres_trouvees = ""
+lettres_rate = ""
 
 for l in solution:
     affichage = affichage + "_ "
@@ -19,9 +20,14 @@ while tentatives > 0:
     if proposition in solution:
         lettres_trouvees = lettres_trouvees + proposition
         print("-> Bien vu!")
+    if lettres_rate in proposition:
+        print("Lettre déjà proposée !", lettres_rate)
+
     else:
+        lettres_rate = lettres_rate + proposition
         tentatives = tentatives - 1
         print("-> Raté!\n")
+        print(lettres_rate)
         if tentatives == 0:
             print(" ==========Y= ")
         if tentatives <= 1:

@@ -27,7 +27,7 @@ def euler(first, second, third, four, five, six, seven, eight):
         second = 1 / factorial(arg)
         euler_number = euler_number + 1
         arg = arg + 1
-        print(first)
+        print(second)
 
 
 

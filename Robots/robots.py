@@ -10,15 +10,14 @@ class Robot:
     _dx = (0, 1, 0, -1)  # incrément sur X en fonction de la direction
     _dy = (1, 0, -1, 0)  # incrément sur Y en fonction de la direction
 
-
-
-    def __init__(self, x, y, direction):
+    def __init__(self, x, y, direction, nom, types, statut):
         """ Initialiser le robot self à partir de sa position (x, y) et sa direction. """
         self.x = x
         self.y = y
         self.direction = Robot._directions.index(direction)
-        self.nom = "à déterminer"
-        self.type()
+        self.nom = nom
+        self.types = types
+        self.statut = statut
 
     def avancer(self):
         """ Avancer d'une case dans la direction. """
@@ -30,7 +29,7 @@ class Robot:
         self.x -= Robot._dx[self.direction]
         self.y -= Robot._dy[self.direction]
 
-    def pivoter(self):
+    def tourner(self):
         """ Pivoter ce robot de 90° vers la droite. """
         self.direction = (self.direction + 1) % 4
 
@@ -39,19 +38,22 @@ class Robot:
 
     def type(self):
         """Getter type robot"""
-        return self._type
+        return self._types
 
-    def statut(self, stat):
+    def statut(self, statut):
         """Setter statut robot"""
-        self._statut = stat
+        self._statut = statut
 
     def orientation(self, ori):
         """Setter orientation robot"""
         self._orientation = ori
 
     def __str__(self):
-        return '({}, {})>{}'.format(self.x, self.y, Robot._directions[self.direction])
+        return '({}, {})>{}'.format(self.x, self.y, Robot._directions[self.direction], self.nom, self.type, self.statut)
 
-rob1 = Robot
-rob1.statut("En service")
+
 """type mobiles, industriels, humanoides"""
+
+Bob = Robot.afficher("est")
+Bob = Robot.orientation("est")
+print(Bob)
