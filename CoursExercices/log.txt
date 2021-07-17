@@ -1,0 +1,7 @@
+Information Message
+avertissement
+2021-04-21 19:16:36,231 - Journalisation des événements INFO Information Message
+2021-04-21 19:16:36,268 - Journalisation des événements WARNING avertisseement
+2021-04-21 19:16:36,268 - Journalisation des événements ERROR erreur message
+2021-04-21 19:16:36,268 - Journalisation des événements CRITICAL erreur grave
+2021-06-19 10:40:06,266 - Journalisation des événements INFO Initialisation
