@@ -5,13 +5,13 @@
 #
 
 import os
-import pandas as pd
+import pandas_test as pd
 import math
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
-from pandas.plotting import scatter_matrix
+from pandas_test.plotting import scatter_matrix
 from sklearn.preprocessing import OrdinalEncoder
 
 class Immo():

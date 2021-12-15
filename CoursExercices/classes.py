@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas_test as pd
 
 class ListeStock():
     def __init__(self, nom, quantite):

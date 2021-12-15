@@ -1,6 +1,6 @@
 import csv
-import pandas
-from pandas import DataFrame
+import pandas_test
+from pandas_test import DataFrame
 
 
 #####
