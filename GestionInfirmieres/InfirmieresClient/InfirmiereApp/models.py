@@ -14,7 +14,11 @@ class Infirmieres(models.Model):
     id_adresse = models.ForeignKey(
         'Adresse',
         on_delete=models.CASCADE,
+
     )
+
+    def __str__(self):
+        return self.nom
 
 
 class Adresse(models.Model):
@@ -160,3 +164,4 @@ class Soins(models.Model):
         'Prescription',
         on_delete=models.CASCADE,
     )
+
